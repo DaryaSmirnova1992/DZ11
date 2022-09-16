@@ -7,8 +7,6 @@ int sum = 0;
 int k = 0;
 int[,] matrix = new int[rows, columns];
 
-if (rows != columns)
-{
     for (int i = 0; i < matrix.GetLength(0); i++)
     {
         for (int j = 0; j < matrix.GetLength(1); j++)
@@ -36,8 +34,3 @@ if (rows != columns)
         }
     }
     Console.WriteLine($"Номер строки с наименьшей суммой элементов: {k+1}");
-}
-else
-{
-    Console.WriteLine("Массив не прямоугольный");
-}
